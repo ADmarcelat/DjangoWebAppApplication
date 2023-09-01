@@ -25,7 +25,7 @@ SECRET_KEY = 'zts(26&lkau6wh6l+=$pqjcek-8$qlf*=lk48(=-@)&6tg8y$*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://fast-basin-54073-7c62cc179c28.herokuapp.com"]
 
 
 # Application definition
