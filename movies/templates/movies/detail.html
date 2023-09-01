@@ -1,10 +1,17 @@
 {% extends 'base.html' %} {% block content %}
-<dl>
-  <dt>Title</dt>
-  <dd>{{movie.title}}</dd>
-  <dt>Genre</dt>
-  <dd>{{movie.genre}}</dd>
-  <dt>Stock</dt>
-  <dd>{{movie.number_in_stock}}</dd>
-</dl>
+<div class="container">
+  <dl>
+    <dt>Title</dt>
+    <dd>{{ movie.title }}</dd>
+    <dt>Genre</dt>
+    <dd>{{ movie.genre }}</dd>
+    <dt>Stock</dt>
+    <dd>{{ movie.number_in_stock }}</dd>
+  </dl>
+</div>
+<!-- Button in a separate div, aligned to the left -->
+<div class="text-left">
+  <a href="{% url 'movies:index' %}" class="btn btn-primary">Return</a>
+</div>
+
 {% endblock %}
